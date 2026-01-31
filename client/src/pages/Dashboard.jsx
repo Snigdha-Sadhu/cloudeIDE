@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import API from "../API/api";
-import { AuthContext } from '../Context/AuthContext';
+import { AuthContext } from '../context/AuthContext';
 import { useContext } from "react";
 const Dashboard = () => {
   const [projects, setProjects] = useState([]);
