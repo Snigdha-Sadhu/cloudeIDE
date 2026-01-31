@@ -140,7 +140,7 @@ to use the app.
 |   POST     |   `/api/file/create `              |   Create file                            | 
 |   PATCH    |`/api/file/rename`                  |   rename the file and folder (protected) |
 |   GET      |   `/api/file/:id`                  |   Get filebyID (protected)               |
-|   POST     |`/api/file/snapshot/:fileidId/`     |   download workspace (protected)         |
+|   POST     |`/api/file/snapshot/:fileId/`       |   download workspace (protected)         |
 |   DELETE   |   `/api/file/delete`               |   delete file and folder (protected)     |
 |   PATCH    |`/api/file/:fileId`                 |   update code of a file  (protected)     |
 |   PATCH    |  `/api/file/move`                  |   move file                              |
@@ -152,7 +152,7 @@ to use the app.
 
 | **Method** | **Endpoint**            | **Description**                              |
 | ---------- | ----------------------  | -------------------------------------------- |
-|   POST     |   `/api/esxecute/run`   |   Execute code                               |
+|   POST     |   `/api/execute/run`   |   Execute code                                |
 
 
 ## Notes
