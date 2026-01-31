@@ -10,9 +10,12 @@ import cors from "cors";
 import mongoose from "mongoose";
 import { errorHandler } from "./middleware/errorHandler.js";
 import Project from "./models/projectmodel.js";
-const app = express();
 
-app.use(cors());
+import projectRoute from "./routes/projectRoute.js";
+import fileRoute from "./routes/fileRoute.js";
+import executeRoute from "./routes/executeRoute.js";
+import authRoute from "./routes/AuthRoute.js";
+const app = express();
 app.use(express.json());
 app.use(cors({origin:process.env.CLIENT_URL,credentials:true}));
 app.get("/", (req, res) => {
@@ -25,10 +28,7 @@ app.get("/api/test", (req, res) => {
   res.json({ message: "Backend working" });
 });
 
-import projectRoute from "./routes/projectRoute.js";
-import fileRoute from "./routes/fileRoute.js";
-import executeRoute from "./routes/executeRoute.js";
-import authRoute from "./routes/AuthRoute.js";
+
 app.use("/api/project", projectRoute);
 app.use("/api/file", fileRoute);
 app.use("/api/execute", executeRoute);
