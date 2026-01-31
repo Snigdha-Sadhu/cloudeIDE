@@ -52,8 +52,8 @@ A browser-based coding workspace for writing, executing, and managing code with 
 
 ```bash
 
-git clone https://github.com/Snigdha-Sadhu/Skill-Swap.git
-cd skill-swap
+git clone https://github.com/Snigdha-Sadhu/cloudeIDE.git
+cd cloud-IDE
 
 ```
 ### Backend setup
