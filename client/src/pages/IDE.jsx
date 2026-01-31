@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
-import Sidebar from "../components/codeeditor/Sidebar";
-import CodeEditor from "../components/codeeditor/CodeEditor";
+import CodeEditor from "../components/codeeditor/Editor";
 import Terminal from "../components/codeeditor/Terminal";
 import EditorTabs from "../components/codeeditor/EditorTabs";
+import Sidebar from "../components/codeeditor/SideBar.jsx";
 import axios from "axios";
 import _ from "lodash";
 import API from "../API/api";
