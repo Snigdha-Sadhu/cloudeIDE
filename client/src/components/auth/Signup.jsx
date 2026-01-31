@@ -52,7 +52,7 @@ if(msg.includes('User exists')){
       <div className="flex justify-between items-start border-b border-[#333] pb-4 mb-2">
         <div>
           <h1 className="text-xl font-bold text-indigo-500 tracking-tighter uppercase">
-            AlgoKernel
+            CodeSpace
           </h1>
          
         </div>
