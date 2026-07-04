@@ -48,10 +48,18 @@ const CreateProject = () => {
 
           <div>
             <label className="block text-xs font-semibold uppercase text-gray-500 mb-2">Language</label>
-            <select 
-              className="w-full bg-[#252526] border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 appearance-none"
-              onChange={(e) => setFormData({...formData, language: e.target.value})}
-            >
+           <select
+  value={formData.language}
+  className="w-full bg-[#252526] border border-gray-700 rounded-lg px-4 py-3 text-white"
+  onChange={(e) => {
+    console.log("Selected:", e.target.value);
+
+    setFormData((prev) => ({
+      ...prev,
+      language: e.target.value,
+    }));
+  }}
+>
              <option value="cpp">C++</option>
     <option value="java">Java</option>
     <option value="python3">Python 3</option>
