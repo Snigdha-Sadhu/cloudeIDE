@@ -49,6 +49,10 @@ console.log("filename",userFileName);
     });
 
   } catch (err) {
-    next(err);
+    console.error("ERROR:", err);
+  res.status(500).json({
+    message: err.message,
+    stack: err.stack,
+  });
   }
 };
