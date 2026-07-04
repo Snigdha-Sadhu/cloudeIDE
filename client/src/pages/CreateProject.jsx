@@ -53,7 +53,8 @@ const CreateProject = () => {
   className="w-full bg-[#252526] border border-gray-700 rounded-lg px-4 py-3 text-white"
   onChange={(e) => {
     console.log("Selected:", e.target.value);
-
+alert(e.target.value);
+  
     setFormData((prev) => ({
       ...prev,
       language: e.target.value,
