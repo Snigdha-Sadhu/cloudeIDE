@@ -11,6 +11,7 @@ const CreateProject = () => {
     e.preventDefault();
     setLoading(true);
     try {
+      console.log ("language is",language);
       const token = localStorage.getItem("token");
       // This request creates the project in MongoDB
       const res = await API.post("/project/create", formData, {
