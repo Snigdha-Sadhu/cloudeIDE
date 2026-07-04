@@ -5,6 +5,6 @@ import { executionLimiter } from "../middleware/executionLimiter.js";
 const router = express.Router();
 
 // POST /api/execute
-router.post("/execute/run",executionLimiter,runCode);
+router.post("/run",executionLimiter,runCode);
 
 export default router;
